@@ -1,0 +1,11 @@
+{
+	"name": "number-to-text-converter",
+	"version": "1.0.0",
+	"main": "numberToText.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"jest": "^24.1.0"
+	}
+}

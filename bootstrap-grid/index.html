@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-grid.min.css"
+		/>
+		<title>Bootstrap Grid.</title>
+
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				background: gray;
+			}
+			header .box,
+			footer .box {
+				height: 150px;
+			}
+			.grid .box {
+				height: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container wrapper">
+			<header class="row mb-5">
+				<div class="col-12 box"></div>
+			</header>
+			<section class="row mb-5">
+				<div class="col-9 grid">
+					<div class="container">
+						<div class="row mb-5">
+							<div class="col-3 box"></div>
+							<div class="col-3 offset-1 box"></div>
+							<div class="col-3 offset-1 box"></div>
+						</div>
+						<div class="row mb-5">
+							<div class="col-3 box"></div>
+							<div class="col-3 offset-1 box"></div>
+							<div class="col-3 offset-1 box"></div>
+						</div>
+						<div class="row">
+							<div class="col-3 box"></div>
+							<div class="col-3 offset-1 box"></div>
+							<div class="col-3 offset-1 box"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 box"></div>
+			</section>
+			<footer class="row">
+				<div class="col-12 box"></div>
+			</footer>
+		</div>
+	</body>
+</html>
